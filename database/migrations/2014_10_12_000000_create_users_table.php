@@ -14,6 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::dropIfExists('users');
+        Schema::dropIfExists('personal_access_tokens');
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
