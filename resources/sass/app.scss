@@ -1,0 +1,256 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.card-body{
+    color: pink;
+}
+
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(84,42,168,1) 0%, rgba(186,65,158,1) 100%);
+    box-sizing: border-box;
+    font-family: $font-family_1;
+}
+.nav {
+    background-color: $background-color_1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .search__bar {
+        .nav__search {
+            padding: 12px 26px;
+            border-radius: 3px;
+            border: none;
+            background-color: $background-color_2;
+            outline: none;
+        }
+    }
+}
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .active {
+        background-color: $background-color_2;
+        border-radius: 3px;
+    }
+}
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav__item {
+    display: inline-block;
+}
+.nav__link {
+    color: $color_1;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+.search__bar {
+    i {
+        position: absolute;
+        color: $color_1;
+        top: 25px;
+        font-size: 14px;
+        margin-left: 6px;
+    }
+    input {
+        &::placeholder {
+            color: $color_1;
+            font-weight: 400;
+            padding-left: 5px;
+        }
+    }
+}
+.todo-box__item {
+    display: flex;
+    color: $color_2;
+    align-items: baseline;
+    justify-content: space-between;
+    cursor: pointer;
+    .close-icon {
+        cursor: pointer;
+        &:hover {
+            color: $color_3;
+        }
+    }
+}
+.todo-box__car-wrap {
+    .card--holder {
+        display: block;
+        min-height: 20px;
+    }
+}
+.todo-box__item-text {
+    font-size: 16px;
+    width: 85%;
+    font-weight: bold;
+    color: $color_2;
+    padding: 5px;
+    margin-bottom: 8px;
+}
+.list__title {
+    h3 {
+        font-size: 27px;
+        margin: 5px 0;
+        padding: 0px 20px;
+        color: $color_1;
+    }
+}
+.todo-cards {
+    max-width: 90%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 8px;
+    top: 0;
+    -webkit-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+}
+.todo-cards__wrapper {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    margin: 0 4px;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 272px;
+    .todo-header__list {
+        background-color: $background-color_3;
+        .todo-add__card {
+            color: $color_1;
+            &:hover {
+                background-color: $background-color_4;
+            }
+        }
+    }
+}
+.todo-cards__card {
+    background: #ebecf0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.todo-sample__card {
+    padding: 8px 10px;
+    background-color: $background-color_5;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    color: $color_4;
+    position: relative;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+    font-size: 17px;
+    cursor: grab;
+    &:hover {
+        background-color: $background-color_6;
+        box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+        .pencil-icon {
+            display: block;
+            cursor: pointer;
+        }
+    }
+}
+.pencil-icon {
+    position: absolute;
+    display: none;
+    top: 11px;
+    right: 13px;
+    font-size: 13px;
+    transition: 0.2s;
+}
+.todo-add__card {
+    display: flex;
+    align-items: center;
+    color: $color_5;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    &:hover {
+        background-color: $background-color_7;
+    }
+}
+.add-icon {
+    padding: 0 10px;
+}
+.addCard__text {
+    input {
+        width: 98%;
+        border-radius: 3px;
+        border: none;
+        padding-bottom: 55px;
+    }
+}
+.addCard__button {
+    button {
+        padding: 6px 12px;
+        border-radius: 3px;
+        margin-top: 12px;
+        border: none;
+        outline: none;
+        background-color: $background-color_8;
+        color: $color_6;
+        font-weight: 600;
+    }
+}
+.transit-1 {
+    transition: all 1s;
+}
+.d-inline-block {
+    display: inline-block;
+}
+.full {
+    width: 100%;
+}
+.card-modal-wrapper {
+    padding: 20px;
+    textarea {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        padding: 10px;
+        width: 100%;
+        line-height: 1.5;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 1px #999;
+        margin-bottom: 10px;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    button {
+        padding: 6px 12px;
+        border-radius: 3px;
+        margin-top: 12px;
+        border: none;
+        outline: none;
+        background-color: $background-color_8;
+        color: $color_6;
+        font-weight: 600;
+    }
+}
+input {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding: 10px;
+    width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    margin-bottom: 10px;
+}
