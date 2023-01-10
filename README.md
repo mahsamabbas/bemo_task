@@ -1,4 +1,5 @@
 ### Setup
+
 - When you are done with installation, copy the `.env.example` file to `.env`
 ```
 $ cp .env.example .env
