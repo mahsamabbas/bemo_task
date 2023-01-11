@@ -14,11 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/db-dump', function () {
-    
+
     \Spatie\DbDumper\Databases\MySql::create()
         ->setDbName(config('database.connections.mysql.database'))
         ->setUserName(config('database.connections.mysql.username'))
         ->setPassword(config('database.connections.mysql.password'))
+        ->setSocket(config('database.connections.mysql.unix_socket'))
         ->dumpToFile('dump.sql');
 });
 
