@@ -19,6 +19,7 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+        
 
         <link rel="preload" as="style" href="https://bemo-app.herokuapp.com/build/assets/app.afc1c9f3.css" />
         <link rel="modulepreload" href="https://bemo-app.herokuapp.com/build/assets/app.130de1a9.js" />
