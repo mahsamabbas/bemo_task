@@ -62,7 +62,7 @@ return [
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
             'dump' => [
-                'dump_binary_path' => 'C:/xampp816/mysql/bin/', // only the path, so without `mysqldump` or `pg_dump`
+                'dump_binary_path' => '/app/.heroku/vendor/mysql/bin',
                 'use_single_transaction',
                 'timeout' => 60 * 5, // 5 minute timeout
             ],
